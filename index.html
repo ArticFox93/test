@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pre load</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/Logo.webp" />
+  </head>
+  <body>
+    <video id="video" autoplay>
+      <source src="img/1127.mp4" type="video/mp4" />
+      erro
+    </video>
+
+    <script>
+      const video = document.getElementById("video");
+
+      // Funkce, která se spustí po dokončení přehrávání videa
+      video.onended = function () {
+        // Po skončení videa přesměrujeme na jinou stránku
+        window.location.href = "index2.html";
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* zajistí, že tělo bude mít plnou výšku */
+  overflow: hidden; /* Zamezí zobrazení posuvníků */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+/* Styl pro video, aby se přizpůsobilo celé obrazovce, ale zůstalo celé */
+#video {
+  width: 100%; /* Video zabírá celou šířku obrazovky */
+  height: 100%; /* Video zabírá celou výšku obrazovky */
+  object-fit: contain; /* Video bude přizpůsobeno tak, aby se celé vešlo na obrazovku */
+}
