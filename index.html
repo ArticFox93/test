@@ -12,15 +12,20 @@
       <source src="img/1127.mp4" type="video/mp4" />
       erro
     </video>
+    <button id="playButton">Start</button>
 
     <script>
       const video = document.getElementById("video");
-
+      const playButton = document.getElementById("playButton");
       // Funkce, která se spustí po dokončení přehrávání videa
       video.onended = function () {
         // Po skončení videa přesměrujeme na jinou stránku
         window.location.href = "index2.html";
       };
+
+      playButton.addEventListener("click", () => {
+        video.play();
+      });
     </script>
   </body>
 </html>
